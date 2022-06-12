@@ -23,6 +23,7 @@ if (empty($TMUX))
   endif
 endif
 
+let g:gruvbox_contrast_dark = 'hard'
 colorscheme gruvbox
 set number
 let g:airline#extensions#tabline#enabled = 1
@@ -41,4 +42,6 @@ function! s:check_back_space() abort
 endfunction
 
 set tabstop=4
-map <F8> :w <CR> :!gcc % -o %< -lm && ./%< <CR>
+map <F8> :w <CR> :!gcc % -o %< -lm && ./%< <CR>   "memudahkan compile file C dengan menekan tombol F8
+set background=dark         "mengaktifkan bg dark untuk theme gruvbox
+set mouse=a                 "mengaktifkan mouse
